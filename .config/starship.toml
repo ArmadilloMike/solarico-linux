@@ -1,0 +1,66 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'nord'
+
+format = '''$hostname | $username
+$directory$gitstatus$python
+'''
+
+[username]
+show_always = true
+style_user = "bold fg:nord9"
+style_root = "bold fg:nord11"
+format = "[$user]($style)"
+
+[hostname]
+style = "bold fg:nord10"
+ssh_only=false
+format = "[$hostname]($style)"
+
+[directory]
+style = "bold fg:nord8"
+truncation_length = 3
+truncate_to_repo = true
+read_only = " "
+read_only_style = "fg:nord11"
+
+[git_status]
+style = "fg:nord14"
+conflicted = "󱐋"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡{ahead_count}⇣{behind_count}"
+untracked = "?${count}"
+stashed = ""
+modified = "!${count}"
+staged = "+${count}"
+renamed = "${count}"
+deleted = "X${count}"
+format = "([$all_status$ahead_behind]($style) )"
+
+[python]
+style = "fg:nord13"
+symbol = ""
+format = "[$symbol($version)]($style)"
+
+[character]
+success_symbol = "[](bold fg:nord14)"
+error_symbol = "[](bold fg:nord11)"
+
+[palettes.nord]
+nord0 = '#2e3440'
+nord1 = '#3b4252'
+nord2 = '#434c5e'
+nord3 = '#4c566a'
+nord4 = '#d8dee9'
+nord5 = '#e5e9f0'
+nord6 = '#eceff4'
+nord7 = '#8fbcbb'
+nord8 = '#88c0d0'
+nord9 = '#81a1c1'
+nord10 = '#5e81ac'
+nord11 = '#bf616a'
+nord12 = '#d08770'
+nord13 = '#ebcb8b'
+nord14 = '#a3be8c'
+nord15 = '#b48ead'

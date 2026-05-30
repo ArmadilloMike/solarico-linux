@@ -1,0 +1,30 @@
+i3lock \
+	--color=2e3440ff \
+	--inside-color=3b4252ff \
+	--insidever-color=4c566aff \
+	--insidewrong-color=bf616aff \
+	--ring-color=88c0d0ff \
+	--ringver-color=a3be8cff \
+	--ringwrong-color=bf616aff \
+	--line-color=4c566aff \
+	--keyhl-color=88c0d0ff \
+	--bshl-color=ebcb8bff \
+	--separator-color=4c566aff \
+	--verif-color=a3be8cff \
+	--wrong-color=bf616aff \
+	--time-color=eceff4ff \
+	--date-color=d8dee9ff \
+	--layout-color=d8dee9ff \
+	--greeter-color=d8dee9ff \
+	--verif-text="Verifying" \
+	--wrong-text="Wrong!" \
+	--noinput-text="" \
+	--time-str="%H:%M" \
+	--date-str="%A, %B %d" \
+	--time-size=36\
+	--date-size=14\
+	--radius=120 \
+	--ring-width=4 \
+	--clock \
+	--indicator \
+	--show-failed-attempts
